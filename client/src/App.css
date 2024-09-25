@@ -1,0 +1,467 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* General body styling */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* General button styling */
+button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Container styling */
+.login,
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eaeaea;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eaeaea;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.information {
+  background-color: #f9f9f9; /* רקע בהיר */
+  padding: 20px; /* ריווח פנימי */
+  border-radius: 8px; /* פינות מעוגלות */
+  border: 1px solid #ddd; /* גבול דק */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל עדין */
+  max-width: 600px; /* מגבלת רוחב */
+  margin: 0 auto; /* למרכז בעמוד */
+}
+
+.information p {
+  margin: 10px 0; /* רווח בין הפסקאות */
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.information strong {
+  color: #007bff; /* הדגשה עם צבע כחול */
+  font-weight: bold;
+}
+
+.information div {
+  padding-left: 20px; /* הזחה עבור אובייקטים מקוננים */
+}
+
+.information div p {
+  margin: 5px 0; /* רווח קטן יותר לאובייקטים מקוננים */
+}
+
+.information ul {
+  margin: 10px 0 10px 20px; /* ריווח לפני ואחרי הרשימה */
+  padding: 0;
+}
+
+.information li {
+  list-style-type: disc; /* סגנון כדורים לרשימה */
+  margin: 5px 0;
+  font-size: 17px; /* גודל טקסט קטן יותר עבור רשימות */
+}
+
+p.info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="phone"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="phone"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button.but {
+  margin: 10px;
+  padding: 12px 25px;
+}
+
+/* Error messages */
+p.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Nav links */
+nav a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ToDos section */
+.toDos {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  min-width: 700px;
+}
+
+.toDos-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.toDos-list {
+  list-style: none;
+}
+
+.toDos-item {
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toDo .title {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.check {
+  margin-right: 10px;
+}
+
+/* Logout and Info buttons */
+.butLogout,
+.butInfo,
+.butToDos,
+.butPosts,
+.butAlbums {
+  background-color: #007bff;
+  margin: 10px;
+}
+
+.butLogout:hover,
+.butInfo:hover,
+.butToDos:hover,
+.butPosts:hover,
+.butAlbums:hover {
+  background-color: #0056b3;
+}
+
+.search input {
+  width: 40%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.add-post,.add-todo {
+  display: flex;
+  flex-direction: column; /* מבנה אנכי */
+  align-items: center; /* ממרכז את התוכן */
+  margin-bottom: 20px; /* ריווח בין הכפתור לטופס */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-post-form {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin-top: 10px; /* רווח מעל הטופס */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-post button {
+  margin-bottom: 15px; /* ריווח בין הכפתור לטופס */
+}
+
+
+
+.add-post button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-post button:hover {
+  background-color: #218838;
+}
+
+.add-post-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: inline-block;
+  max-width: 400px;
+  width: 100%;
+}
+
+.add-post-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-post-form input[type="text"],
+.add-post-form input[type="textarea"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: vertical; /* מאפשר שינוי גובה */
+}
+
+textarea:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.add-post-form input[type="text"]:focus,
+.add-post-form input[type="textarea"]:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.add-post-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-post-form button:hover {
+  background-color: #0056b3;
+}
+
+/* סגנונות עבור רשימת הפוסטים */
+.posts {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  min-width: 700px;
+  margin: 0 auto;
+}
+
+/* סגנון עבור כל פוסט */
+.post {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.post:hover {
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* סגנון עבור כותרת הפוסט */
+.post .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* סגנון עבור תוכן הפוסט */
+.post .body {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.delate,
+.cancel {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.edit,
+.save {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.buts-edit {
+  display: flex;
+  top: 0;
+  justify-content: center;
+}
+
+.but-del-edit {
+  display: flex;
+  align-items: center;
+}
+
+.but-comments {
+  margin-top: 10px;
+}
+
+/* סגנון עבור רשימת תגובות */
+.comments {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 3px solid #007bff;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* סגנון עבור כל תגובה */
+.comment {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  position: relative;
+}
+
+/* סגנון עבור רשימת הפוסטים */
+.ul-posts {
+  list-style: none;
+  padding: 0;
+}
+
+/* תגובות */
+.comment::before {
+  content: "•";
+  color: #007bff;
+  font-size: 20px;
+  position: absolute;
+  left: -10px;
+  top: 0;
+}
+
+/* רווח בין התגובות */
+.comment + .comment {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .home,
+  .login,
+  .register,
+  .toDos {
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+  .toDos {
+    min-width: 100%;
+  }
+}
